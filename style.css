@@ -1,0 +1,34 @@
+/* Styles for image container and image divs */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.image-div {
+    text-align: center;
+    margin: 10px;
+}
+
+.image-div img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Optional: Add border for image div */
+    border-radius: 5px; /* Optional: Add border radius for image div */
+}
+
+.image-div p {
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        flex-wrap: wrap;
+    }
+    .image-div {
+        flex: 0 0 45%; /* Two columns for smaller screens */
+        margin: 5px;
+    }
+}
